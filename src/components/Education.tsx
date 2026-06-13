@@ -4,6 +4,14 @@ import { GraduationCap, Calendar } from "lucide-react";
 const Education = () => {
   const education = [
     {
+      institution: "Indian Institute of Management, Visakhapatnam",
+      logo: "https://www.iimv.ac.in/images/iim-logov.png",
+      degree: "Master of Business Administration - MBA",
+      field: "",
+      period: "May 2026 - May 2028",
+      description: "Pursuing an MBA at IIM Visakhapatnam to build a strong foundation in business strategy, leadership, finance, marketing, and operations, complementing my technical background in AI and software engineering."
+    },
+    {
       institution: "Indian Institute of Technology, Jodhpur",
       logo: "https://iitj.ac.in/PageImages/Pages/07-2024/2f6c058e-925d-4538-803b-f988be667954.jpg",
       degree: "Master of Technology - M.Tech",
@@ -21,7 +29,7 @@ const Education = () => {
     },
     {
       institution: "Prabhujee English Medium School, Bhubaneswar",
-      logo: "https://prabhujeegurukul.com/images/logo.png",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9uCKxLilA7fPdNKist163_VP6PC2SsGJAA&s",
       degree: "CBSE (XII)",
       field: "Science with Computer Science",
       period: "Mar 2016 - Mar 2018",
@@ -29,7 +37,7 @@ const Education = () => {
     },
     {
       institution: "Prabhujee English Medium School, Bhubaneswar",
-      logo: "https://prabhujeegurukul.com/images/logo.png",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9uCKxLilA7fPdNKist163_VP6PC2SsGJAA&s",
       degree: "CBSE (X)",
       field: "PCM",
       period: "Mar 2016",
@@ -63,7 +71,7 @@ const Education = () => {
               <CardHeader className="relative z-10">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 bg-background rounded-lg p-3 flex items-center justify-center border border-border">
+                    <div className="w-20 h-20 bg-white rounded-lg p-3 flex items-center justify-center border border-border">
                       <img 
                         src={edu.logo} 
                         alt={`${edu.institution} logo`}

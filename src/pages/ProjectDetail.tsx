@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ExternalLink, Github, ArrowLeft } from "lucide-react";
@@ -7,6 +8,9 @@ import { ProjectDocumentation } from "@/components/ProjectDocumentation";
 import { getFlinkDocumentation } from "@/data/flink-docs";
 import { getFounderConnectDocumentation } from "@/data/founderconnect-docs";
 import { getMusicalPortfolioDocumentation } from "@/data/musical-portfolio-docs";
+import { getSplitMateDocumentation } from "@/data/splitmate-docs";
+import { getSmartBookDocumentation } from "@/data/smartbook-docs";
+import { getPortfolioDocumentation } from "@/data/portfolio-docs";
 
 interface ProjectData {
   id: string;
@@ -21,6 +25,10 @@ interface ProjectData {
 const ProjectDetail = () => {
   const navigate = useNavigate();
   const { projectId } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
 
   const projectsData: Record<string, ProjectData> = {
     flink: {
@@ -50,6 +58,33 @@ const ProjectDetail = () => {
       codeLink: "https://github.com/SANIDHYADASH/AM---Musical-Artist-Portfolio",
       liveLink: "https://alivamusic.sanidhya.in/",
     },
+    splitmate: {
+      id: "splitmate",
+      title: "SplitMate — Group Expense Splitting Application",
+      description: "A full-stack web app for splitting expenses among friends and groups, with smart settlements, budgets, PDF exports, and shareable views.",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase", "React Query"],
+      gradient: "from-primary to-accent",
+      codeLink: "https://github.com/SANIDHYADASH/splitmatev2",
+      liveLink: "https://splitmate.sanidhya.in",
+    },
+    portfolio: {
+      id: "portfolio",
+      title: "Sanidhya Dash — Software Engineer Portfolio",
+      description: "A modern, fully responsive personal portfolio website showcasing skills, education, experience, and projects, with dark/light theme support and per-project documentation pages.",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "React Router", "Embla Carousel"],
+      gradient: "from-accent to-secondary",
+      codeLink: "https://github.com/SANIDHYADASH/My-Portfolio",
+      liveLink: "https://sanidhya.in",
+    },
+    smartbooks: {
+      id: "smartbooks",
+      title: "SmartBooks — Accounting, Inventory & Invoicing Platform",
+      description: "A multi-tenant, GST-compliant invoicing and accounting SaaS for Indian SMBs with multi-company support, role-based access, Razorpay payments, and 14+ business reports.",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase", "Razorpay", "React Query"],
+      gradient: "from-secondary to-primary",
+      codeLink: "https://github.com/SANIDHYADASH/SmartBook",
+      liveLink: "https://smart-book-chi.vercel.app/",
+    },
   };
 
   const project = projectsData[projectId || ""];
@@ -62,6 +97,12 @@ const ProjectDetail = () => {
         return getFounderConnectDocumentation();
       case "musical-artist-portfolio":
         return getMusicalPortfolioDocumentation();
+      case "splitmate":
+        return getSplitMateDocumentation();
+      case "smartbooks":
+        return getSmartBookDocumentation();
+      case "portfolio":
+        return getPortfolioDocumentation();
       default:
         return null;
     }

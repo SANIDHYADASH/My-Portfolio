@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Software Engineer";
+  const fullText = "Engineering the Future";
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);

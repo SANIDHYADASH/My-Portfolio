@@ -6,7 +6,7 @@ const Experience = () => {
   const experiences = [
     {
       company: "FIS India Pvt. Ltd.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/FIS_logo.svg/1200px-FIS_logo.svg.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/FIS_logo.svg/1280px-FIS_logo.svg.png",
       role: "Software Engineer",
       period: "June 2022 - Present",
       description: "I've been an integral part of the Architecture team, leading the development of scalable applications, including a Money Movement App. In this role, I spearheaded the implementation of REST API architecture for seamless money movement between two cores, ensuring secure and efficient transactions. Additionally, I played a key role in migrating SQLJ to JDBC standard Java files, enhancing the maintainability and performance of our database interactions. My responsibilities encompass orchestrating complex batch operations using the Spring Batch framework, optimizing transaction metrics, and ensuring the overall robustness and reliability of the applications I develop.",
@@ -14,7 +14,7 @@ const Experience = () => {
     },
     {
       company: "IBM India Pvt. Ltd.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png",
       role: "Data Engineer Intern",
       period: "Jan 2022 - June 2022",
       description: "Performed operations using Big Data tools like Hadoop, Hive, Pig, Spark, PySpark on different datasets. Implemented PySpark and Spark SQL on Cloud Platforms in collaboration with the team. Apart from this, I have learnt several other analytics tools such as Alteryx, PowerBI, R Shiny and many more.",

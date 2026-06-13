@@ -60,6 +60,33 @@ export const Projects = () => {
       codeLink: "https://github.com/SANIDHYADASH/AM---Musical-Artist-Portfolio",
       liveLink: "https://alivamusic.sanidhya.in/",
     },
+    {
+      id: "splitmate",
+      title: "SplitMate - Group Expense Splitting",
+      description: "A full-stack web app for splitting expenses among friends and groups, with smart settlements, budgets, PDF exports, and shareable views.",
+      tags: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+      gradient: "from-primary to-accent",
+      codeLink: "https://github.com/SANIDHYADASH/splitmatev2",
+      liveLink: "https://splitmate.sanidhya.in",
+    },
+    {
+      id: "portfolio",
+      title: "Software Engineer Portfolio",
+      description: "A modern, fully responsive personal portfolio with dark/light themes, animated sections, project showcase carousel, and dedicated documentation pages.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+      gradient: "from-accent to-secondary",
+      codeLink: "https://github.com/SANIDHYADASH/My-Portfolio",
+      liveLink: "https://sanidhya.in",
+    },
+    {
+      id: "smartbooks",
+      title: "SmartBooks - Accounting, Inventory & Invoicing",
+      description: "A multi-tenant GST-compliant invoicing and accounting SaaS for Indian SMBs with multi-company support, RBAC, Razorpay payments, and 14+ business reports.",
+      tags: ["React", "TypeScript", "Supabase", "Razorpay"],
+      gradient: "from-secondary to-primary",
+      codeLink: "https://github.com/SANIDHYADASH/SmartBook",
+      liveLink: "https://smart-book-chi.vercel.app/",
+    },
   ];
 
   return (

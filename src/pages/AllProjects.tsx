@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
@@ -6,6 +7,10 @@ import { useNavigate } from "react-router-dom";
 
 const AllProjects = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const projects = [
     {
@@ -34,6 +39,33 @@ const AllProjects = () => {
       gradient: "from-accent to-primary",
       codeLink: "https://github.com/SANIDHYADASH/AM---Musical-Artist-Portfolio",
       liveLink: "https://alivamusic.sanidhya.in/",
+    },
+    {
+      id: "splitmate",
+      title: "SplitMate - Group Expense Splitting",
+      description: "Full-stack expense splitting app with smart settlements, budgets, PDF exports, and public shareable views.",
+      tags: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+      gradient: "from-primary to-accent",
+      codeLink: "https://github.com/SANIDHYADASH/splitmatev2",
+      liveLink: "https://splitmate.sanidhya.in",
+    },
+    {
+      id: "portfolio",
+      title: "Software Engineer Portfolio",
+      description: "Modern responsive personal portfolio with dark/light themes, animated sections, project carousel, and per-project documentation pages.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+      gradient: "from-accent to-secondary",
+      codeLink: "https://github.com/SANIDHYADASH/My-Portfolio",
+      liveLink: "https://sanidhya.in",
+    },
+    {
+      id: "smartbooks",
+      title: "SmartBooks - Accounting & Invoicing",
+      description: "Multi-tenant GST-compliant invoicing and accounting SaaS for Indian SMBs with multi-company, RBAC, Razorpay payments, and 14+ reports.",
+      tags: ["React", "TypeScript", "Supabase", "Razorpay"],
+      gradient: "from-secondary to-primary",
+      codeLink: "https://github.com/SANIDHYADASH/SmartBook",
+      liveLink: "https://smart-book-chi.vercel.app/",
     },
   ];
 
